@@ -39,6 +39,42 @@ function setup() {
 }//close setup
 
 function draw() {
+    //BACKGROUND
     background( 95, 95, 95);
-    rect(50, 50, 80, 80);
+    
+    //CHECKERED BOARD
+    for (i = 0 ; i < gridSizeY ; i++ ){
+      for (j = 0 ; j < gridSizeX  ; j++) { 
+
+        //UPDATE COLORS
+        aSquareR += 5;
+        aSquareR %= 255;
+        aSquareG += 25;
+        aSquareG %= 255;
+        aSquareB += 15;
+        aSquareB %= 255;
+        bSquareR += 3;
+        bSquareR %= 255;
+        bSquareG += 2;
+        bSquareG %= 255;
+        bSquareB += 6;
+        bSquareB %= 255;
+
+        //UPDATE FILLSTYLE AFTER COLOR IS SELECTED
+        if ( (i%2 == 0 && j%2 ==0) || (i%2 == 1 && j%2 == 1)  ) {
+          c.fillStyle = 'pink';
+        }//close if
+        else {
+            c.fillStyle = 'blue';
+        }
+
+        //COLOR SELECTED SQUARE
+        if ( j == xPos && i == yPos ){
+          c.fillStyle = '#001625';
+        }//close if selected position square
+
+        //DRAW EACH RECTANGLE IN THE LOOPS
+         c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
+        }//close inner for loop
+    }//close outter for loop
 }//close draw
