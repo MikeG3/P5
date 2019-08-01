@@ -35,7 +35,7 @@ function move(key) {
 }//close move function
 
 function setup() {
-  createCanvas(pWidth, pHeight);
+  createCanvas(pWidth - 10, pHeight - 10);
 }//close setup
 
 function draw() {
