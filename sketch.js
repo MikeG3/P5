@@ -1,6 +1,6 @@
 //SET SKETCH HEIGHT AND WIDTH
-var pWidth = window.innerWidth - 5;
-var pHeight = window.innerHeight - 5;
+var pWidth = window.innerWidth - 15;
+var pHeight = window.innerHeight - 15;
 
 //GLOBAL VARIABLES
 var frameCounter = 0;
