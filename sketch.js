@@ -1,4 +1,4 @@
-//set canvas height and width
+//SET SKETCH HEIGHT AND WIDTH
 var pWidth = window.innerWidth - 5;
 var pHeight = window.innerHeight - 5;
 
@@ -36,6 +36,7 @@ function move(key) {
 
 function setup() {
   createCanvas(pWidth, pHeight);
+    frameRate(60);
 }//close setup
 
 function draw() {
@@ -62,19 +63,19 @@ function draw() {
 
         //UPDATE FILLSTYLE AFTER COLOR IS SELECTED
         if ( (i%2 == 0 && j%2 ==0) || (i%2 == 1 && j%2 == 1)  ) {
-          c.fillStyle = 'pink';
+            stroke(80, 3, 12);
         }//close if
         else {
-            c.fillStyle = 'blue';
+            stroke(23, 14, 198);
         }
 
         //COLOR SELECTED SQUARE
         if ( j == xPos && i == yPos ){
-          c.fillStyle = '#001625';
+          stroke(25, 25, 25);
         }//close if selected position square
 
         //DRAW EACH RECTANGLE IN THE LOOPS
-         c.fillRect(j*squareSize , i*squareSize , squareSize, squareSize);  
+         rect(j*squareSize , i*squareSize , squareSize, squareSize);  
         }//close inner for loop
     }//close outter for loop
 }//close draw
