@@ -1,6 +1,6 @@
 //set canvas height and width
-var pWidth = window.innerWidth;
-var pHeight = window.innerHeight;
+var pWidth = window.innerWidth - 5;
+var pHeight = window.innerHeight - 5;
 
 //GLOBAL VARIABLES
 var frameCounter = 0;
@@ -35,7 +35,7 @@ function move(key) {
 }//close move function
 
 function setup() {
-  createCanvas(pWidth - 10, pHeight - 10);
+  createCanvas(pWidth, pHeight);
 }//close setup
 
 function draw() {
