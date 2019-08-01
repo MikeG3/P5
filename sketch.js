@@ -63,7 +63,7 @@ function draw() {
 
         //UPDATE FILLSTYLE AFTER COLOR IS SELECTED
         if ( (i%2 == 0 && j%2 ==0) || (i%2 == 1 && j%2 == 1)  ) {
-            fill(80, 3, 12);
+            fill(200, 100, 120);
         }//close if
         else {
             fill(23, 14, 198);
