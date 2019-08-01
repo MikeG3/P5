@@ -63,15 +63,15 @@ function draw() {
 
         //UPDATE FILLSTYLE AFTER COLOR IS SELECTED
         if ( (i%2 == 0 && j%2 ==0) || (i%2 == 1 && j%2 == 1)  ) {
-            stroke(80, 3, 12);
+            fill(80, 3, 12);
         }//close if
         else {
-            stroke(23, 14, 198);
+            fill(23, 14, 198);
         }
 
         //COLOR SELECTED SQUARE
         if ( j == xPos && i == yPos ){
-          stroke(25, 25, 25);
+            fill(25, 25, 25);
         }//close if selected position square
 
         //DRAW EACH RECTANGLE IN THE LOOPS
