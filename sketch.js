@@ -42,17 +42,20 @@ window.addEventListener('keydown', move );
 
 //FUNCTIONS
 function move(key) {
+    //MOVE SELECTED SQUARE IN GRID WITH ARROW KEYS
     if (key.keyCode == 37) {xPos = (xPos-1)%gridSizeX; if (xPos < 0) { xPos += gridSizeX; } }
     if (key.keyCode == 39) {xPos = (xPos+1)%gridSizeX; if (xPos > gridSizeX) { xPos -= gridSizeX; } }
     if (key.keyCode == 38) {yPos = (yPos-1)%gridSizeY; if (yPos < 0) { yPos += gridSizeY; } }
     if (key.keyCode == 40) {yPos = (yPos+1)%gridSizeY; if (yPos > gridSizeY) { yPos -= gridSizeY; } }
+    //TOGGLE SELECTED SQUARE
+    if (key.keyCode == 13) { }
 }//close move function
 
 function setup() {
   createCanvas(pWidth, pHeight);
     frameRate(60);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
-    for (i = 0 ; i < 28 ; i++) {
+    for (i = 0 ; i < gridSizeX ; i++) {
         soundWaves[i] = new p5.Oscillator();
         soundWaves[i].start();
         soundWaves[i].setType('sine');
@@ -60,6 +63,11 @@ function setup() {
         soundWaves[i].freq( (i*100) );
     }//close for
     //INITIALIZE ALL SELECTED SQUARES TO FALSE
+     for (i = 0 ; i < gridSizeY ; i++ ){
+      for (j = 0 ; j < gridSizeX  ; j++) { 
+          selectedSquares[i][j] = false;
+      }//close inner for
+    }//close outer for
 }//close setup
 
 //DRAW LOOPS FOREVER
