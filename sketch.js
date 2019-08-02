@@ -15,7 +15,7 @@ var pWidth = window.innerWidth - 15;
 var pHeight = window.innerHeight - 15;
 
 //GLOBAL VARIABLES
-var frameCounter = 100;
+var frameCounter = 0;
 var i = 0;
 var j = 0;
 var xPos = 0;
@@ -60,8 +60,8 @@ function setup() {
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*100) );
-        selectedSquares[i] = new Array(); 
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
+        selectedSquares[i] = new Array(); 
         for (j = 0 ; j < gridSizeY ; j++) {
              selectedSquares[i].push(false);
          }//close for j
@@ -116,7 +116,7 @@ function draw() {
     
     //PLAY SOUND
     /*
-    if ( selectedSquares[j][i] ){
+    if ( selectedSquares[0][i] ){
         soundWaves[i].amp(0.5);
     }//close if
     */
