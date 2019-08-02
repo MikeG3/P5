@@ -1,3 +1,15 @@
+/*
+SOUND PAD
+4 OCTAVES X 7 NOTES PER SCALE = 28 ROWS
+32 COLUMNS FOR 32ND NOTES
+
+ADD:
+SCALE CHANGER -> THAT CHANGES THE FREQUENCIES TO A DIFFERENT SCALE
+NOTE CHANGER -> CHANGES FREQUENCIES BASED ON DIFFERENT ROOT NOTE
+SOUND FX
+TEMPO CHANGER
+*/
+
 //SET SKETCH HEIGHT AND WIDTH
 var pWidth = window.innerWidth - 15;
 var pHeight = window.innerHeight - 15;
@@ -22,6 +34,7 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 var soundWave;
+var soundWaves;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
