@@ -100,9 +100,11 @@ function draw() {
         }
 
         //COLOR SELECTED SQUARES
+          /*
         if ( selectedSquares[i][j] ){
             fill(125, 125, 125);
         }//close if selected position squares
+        */
         //COLOR SELECTED SQUARE
         if ( j == xPos && i == yPos ){
             fill(25, 25, 25);
