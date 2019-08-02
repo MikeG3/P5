@@ -18,6 +18,7 @@ var pHeight = window.innerHeight - 15;
 var frameCounter = 100;
 var i = 0;
 var j = 0;
+var k = 0;
 var xPos = 4;
 var yPos = 8;
 var gridSizeX = 30;
@@ -50,11 +51,14 @@ function move(key) {
 function setup() {
   createCanvas(pWidth, pHeight);
     frameRate(60);
-    soundWave = new p5.Oscillator();
-    soundWave.start();
-    soundWave.setType('sine');
-    soundWave.amp(0.5);
-    soundWave.freq(220);
+    //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
+    for (i = 0 ; i < 28 ; i++) {
+        soundWaves[i] = new p5.Oscillator();
+        soundWaves[i].start();
+        soundWaves[i].setType('sine');
+        soundWaves[i].amp(0.0);
+        soundWave.freq( (i*100)m);
+    }//close for
 }//close setup
 
 //DRAW LOOPS FOREVER
