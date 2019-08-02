@@ -34,7 +34,7 @@ var bSquareB = 0;
 var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
-var soundWave;
+//var soundWave;
 var soundWaves = [];
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
@@ -105,7 +105,7 @@ function draw() {
     //PLAY SOUND
    // soundWave.start();
 //     soundWave.amp(0.5);
-    soundWave.freq( frameCounter%10000+20 );
+    //soundWave.freq( frameCounter%10000+20 );
     //soundWave.stop();
     
     //UPDATE FRAME COUNT
