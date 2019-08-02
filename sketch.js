@@ -85,9 +85,9 @@ function draw() {
     }//close outter for loop
     
     //PLAY SOUND
-    //soundWave.start();
+    soundWave.start();
 //     soundWave.amp(0.5);
-//     soundWave.frequency(220);
+//     soundWave.freQ(220);
     //soundWave.stop();
     
 }//close draw
