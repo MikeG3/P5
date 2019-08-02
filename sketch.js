@@ -60,8 +60,11 @@ function setup() {
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*100) );
-        selectedSquares[i] = new Array(gridSizeY);  
-    }//close for
+        selectedSquares[i] = new Array(); 
+        for (j = 0 ; j < gridSizeY ; j++) {
+             selectedSquares[i].push(false);
+         }//close for j
+    }//close for i
 }//close setup
 
 //DRAW LOOPS FOREVER
