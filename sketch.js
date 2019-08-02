@@ -73,9 +73,9 @@ function draw() {
       for (j = 0 ; j < gridSizeX  ; j++) { 
           
        //INITIALIZE ALL SELECTED SQUARES TO FALSE
-       if (frameCounter == 0) {
+      // if (frameCounter == 0) {
             selectedSquares[j][i] = false;  
-       }//close if
+       //}//close if
           
         //UPDATE COLORS
         aSquareR += 5;
