@@ -63,11 +63,13 @@ function setup() {
         soundWaves[i].freq( (i*100) );
     }//close for
     //INITIALIZE ALL SELECTED SQUARES TO FALSE
+    /*
      for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
           selectedSquares[i][j] = false;
       }//close inner for
     }//close outer for
+    */
 }//close setup
 
 //DRAW LOOPS FOREVER
@@ -119,10 +121,7 @@ function draw() {
     }//close outter for loop
     
     //PLAY SOUND
-   // soundWave.start();
-//     soundWave.amp(0.5);
-    //soundWave.freq( frameCounter%10000+20 );
-    //soundWave.stop();
+
     
     //UPDATE FRAME COUNT
     frameCounter++;
