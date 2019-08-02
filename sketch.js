@@ -21,6 +21,8 @@ var bSquareB = 0;
 var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
+var soundWave;
+
 
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
@@ -37,6 +39,7 @@ function move(key) {
 function setup() {
   createCanvas(pWidth, pHeight);
     frameRate(60);
+    soundWave = new p5.Oscillator();
 }//close setup
 
 function draw() {
