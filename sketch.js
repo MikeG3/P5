@@ -41,6 +41,7 @@ function setup() {
     soundWave.setType('sine');
 }//close setup
 
+//DRAW LOOPS FOREVER
 function draw() {
     //BACKGROUND
     background( 95, 95, 95);
