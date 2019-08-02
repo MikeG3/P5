@@ -101,10 +101,15 @@ function draw() {
             fill(23, 14, 198);
         }
 
+        //COLOR SELECTED SQUARES
+        if ( selectedSquares[i][j] ){
+            fill(125, 125, 125);
+        }//close if selected position square
         //COLOR SELECTED SQUARE
         if ( j == xPos && i == yPos ){
             fill(25, 25, 25);
         }//close if selected position square
+          
 
         //DRAW EACH RECTANGLE IN THE LOOPS
          rect(j*squareSize , i*squareSize , squareSize, squareSize);  
