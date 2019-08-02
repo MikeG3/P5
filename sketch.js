@@ -87,4 +87,5 @@ function draw() {
     soundWave.start();
     soundWave.amp(0.5);
     soundWave.frequency(220);
+    soundWave.stop();
 }//close draw
