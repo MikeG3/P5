@@ -101,7 +101,7 @@ function draw() {
 
         //COLOR SELECTED SQUARES
           
-        if ( !selectedSquares[j][i] == false ){
+        if ( selectedSquares[j][i] != false ){
             fill(25, 255, 75);
         }//close if selected position squares
         
