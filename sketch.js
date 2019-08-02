@@ -34,8 +34,8 @@ var bSquareB = 0;
 var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
-var soundWaves = [];
-var selectedSquares = [];
+var soundWaves = [gridSizeX*gridSizeY];
+var selectedSquares = [gridSizeX][gridSizeY];
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -59,6 +59,7 @@ function setup() {
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*100) );
     }//close for
+    //INITIALIZE ALL SELECTED SQUARES TO FALSE
 }//close setup
 
 //DRAW LOOPS FOREVER
