@@ -99,12 +99,10 @@ function draw() {
             fill(23, 14, 198);
         }
 
-        //COLOR SELECTED SQUARES
-         
+        //COLOR SELECTED SQUARES 
         if ( selectedSquares[j][i] ){
             fill(25, 255, 75);
         }//close if selected position squares
-        
         //COLOR SELECTED SQUARE
         if ( j == xPos && i == yPos ){
             fill(25, 25, 25);
@@ -117,7 +115,10 @@ function draw() {
     }//close outter for loop
     
     //PLAY SOUND
-
+    if ( selectedSquares[j][i] ){
+        soundWaves[i].amp(0.5);
+    }//close if
+    
     
     //UPDATE FRAME COUNT
     frameCounter++;
