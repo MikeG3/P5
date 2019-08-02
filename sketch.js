@@ -66,7 +66,7 @@ function setup() {
     /*
      for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
-          selectedSquares[i][j] = false;
+          selectedSquares[j][i] = false;
       }//close inner for
     }//close outer for
     */
