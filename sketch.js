@@ -40,7 +40,7 @@ function setup() {
     soundWave = new p5.Oscillator();
     soundWave.setType('sine');
     soundWave.amp(0.5);
-    //soundWave.frequency(220);
+    soundWave.frequency(220);
 }//close setup
 
 //DRAW LOOPS FOREVER
