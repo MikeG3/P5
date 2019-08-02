@@ -57,7 +57,7 @@ function setup() {
         soundWaves[i].start();
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
-        soundWaves[i].freq( (i*100)m);
+        soundWaves[i].freq( (i*100) );
     }//close for
 }//close setup
 
