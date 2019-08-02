@@ -41,9 +41,6 @@ function setup() {
     frameRate(60);
     soundWave = new p5.Oscillator();
     soundWave.setType('sine');
-    soundWave.start();
-    soundWave.amp(0.5);
-    soundWave.frequency(220);
 }//close setup
 
 function draw() {
@@ -85,4 +82,9 @@ function draw() {
          rect(j*squareSize , i*squareSize , squareSize, squareSize);  
         }//close inner for loop
     }//close outter for loop
+    
+    //PLAY SOUND
+    soundWave.start();
+    soundWave.amp(0.5);
+    soundWave.frequency(220);
 }//close draw
