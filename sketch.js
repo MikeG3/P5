@@ -38,6 +38,7 @@ function setup() {
   createCanvas(pWidth, pHeight);
     frameRate(60);
     soundWave = new p5.Oscillator();
+    soundWave.start();
     soundWave.setType('sine');
     soundWave.amp(0.5);
     soundWave.freq(220);
@@ -85,7 +86,7 @@ function draw() {
     }//close outter for loop
     
     //PLAY SOUND
-    soundWave.start();
+   // soundWave.start();
 //     soundWave.amp(0.5);
     soundWave.freq( frameCounter%10000+20 );
     //soundWave.stop();
