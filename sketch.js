@@ -105,11 +105,11 @@ function draw() {
         }
 
         //COLOR SELECTED SQUARES
-          /*
-        if ( selectedSquares[j][i] != false ){
+         
+        if ( selectedSquares[j][i] ){
             fill(25, 255, 75);
         }//close if selected position squares
-        */
+        
         //COLOR SELECTED SQUARE
         if ( j == xPos && i == yPos ){
             fill(25, 25, 25);
