@@ -61,7 +61,7 @@ function setup() {
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*100) );
         for ( j = 0 ; j < gridSizeY ; j++; ) {
-            selectedSquares = [gridSizeY][gridSizeX] = false;
+            selectedSquares[gridSizeY][gridSizeX] = false;
         }//close for j
     }//close for
 }//close setup
