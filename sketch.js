@@ -67,8 +67,8 @@ function draw() {
     background( 95, 95, 95);
     
     //CHECKERED BOARD
-    for (i = 0 ; i < gridSizeY ; i++ ){
-      for (j = 0 ; j < gridSizeX  ; j++) { 
+    for (i = 0 ; i < 32 ; i++ ){
+      for (j = 0 ; j < 28  ; j++) { 
 
         //UPDATE COLORS
         aSquareR += 5;
