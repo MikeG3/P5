@@ -34,7 +34,7 @@ var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
 var soundWaves = [gridSizeX*gridSizeY];
-var selectedSquares = [gridSizeY][gridSizeX];
+var selectedSquares = [gridSizeX];
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -60,11 +60,7 @@ function setup() {
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*100) );
-        /*
-        for ( j = 0 ; j < gridSizeY ; j++; ) {
-            selectedSquares[gridSizeY][gridSizeX] = false;
-        }//close for j
-        */
+        selectedSquares[i] = new Array(gridSizeY);  
     }//close for
 }//close setup
 
