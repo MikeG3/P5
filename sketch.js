@@ -82,9 +82,9 @@ function draw() {
     for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
           
-        //INITIALIZE ALL SELECTED SQUARES TO FALSE
+       //INITIALIZE ALL SELECTED SQUARES TO FALSE
        if (frameCounter == 0) {
-            selectedSquares[l][k] = false;  
+            selectedSquares[j][i] = false;  
        }//close if
           
         //UPDATE COLORS
