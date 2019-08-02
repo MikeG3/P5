@@ -19,6 +19,7 @@ var frameCounter = 100;
 var i = 0;
 var j = 0;
 var k = 0;
+var l = 0;
 var xPos = 4;
 var yPos = 8;
 var gridSizeX = 28;
