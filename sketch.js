@@ -23,8 +23,6 @@ var grayColor = 0;
 var incrementing = true;
 var soundWave;
 
-
-
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
 
@@ -84,8 +82,9 @@ function draw() {
     }//close outter for loop
     
     //PLAY SOUND
-    soundWave.start();
+    //soundWave.start();
     soundWave.amp(0.5);
     soundWave.frequency(220);
-    soundWave.stop();
+    //soundWave.stop();
+    
 }//close draw
