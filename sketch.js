@@ -3,7 +3,7 @@ var pWidth = window.innerWidth - 15;
 var pHeight = window.innerHeight - 15;
 
 //GLOBAL VARIABLES
-var frameCounter = 0;
+var frameCounter = 100;
 var i = 0;
 var j = 0;
 var xPos = 4;
@@ -87,7 +87,7 @@ function draw() {
     //PLAY SOUND
     soundWave.start();
 //     soundWave.amp(0.5);
-    soundWave.freq( frameCounter%10000 );
+    soundWave.freq( frameCounter%10000+20 );
     //soundWave.stop();
     
 }//close draw
