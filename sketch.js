@@ -90,4 +90,6 @@ function draw() {
     soundWave.freq( frameCounter%10000+20 );
     //soundWave.stop();
     
+    //UPDATE FRAME COUNT
+    frameCounter++;
 }//close draw
