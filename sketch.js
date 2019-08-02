@@ -87,7 +87,7 @@ function draw() {
     //PLAY SOUND
     soundWave.start();
 //     soundWave.amp(0.5);
-//     soundWave.freQ(220);
+    soundWave.freq( frameCount%10000 );
     //soundWave.stop();
     
 }//close draw
