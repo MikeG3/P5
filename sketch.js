@@ -18,8 +18,6 @@ var pHeight = window.innerHeight - 15;
 var frameCounter = 100;
 var i = 0;
 var j = 0;
-var k = 0;
-var l = 0;
 var xPos = 4;
 var yPos = 8;
 var gridSizeX = 28;
@@ -63,14 +61,6 @@ function setup() {
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*100) );
     }//close for
-    /*
-    //INITIALIZE ALL SELECTED SQUARES TO FALSE
-    for (k = 0 ; k < gridSizeY ; k++ ){
-      for (l = 0 ; l < gridSizeX  ; l++) { 
-          selectedSquares[l][k] = false;
-      }//close inner for
-    }//close outer for
-    */
 }//close setup
 
 //DRAW LOOPS FOREVER
