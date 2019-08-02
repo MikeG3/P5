@@ -63,12 +63,14 @@ function setup() {
         soundWaves[i].freq( (i*100) );
     }//close for
     //INITIALIZE ALL SELECTED SQUARES TO FALSE
+    /*
      for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
-          bSquareA = 1;
+          //bSquareA = 1;
           //selectedSquares[j][i] = false;
       }//close inner for
     }//close outer for
+    */
 }//close setup
 
 //DRAW LOOPS FOREVER
