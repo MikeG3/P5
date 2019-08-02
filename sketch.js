@@ -40,6 +40,10 @@ function setup() {
   createCanvas(pWidth, pHeight);
     frameRate(60);
     soundWave = new p5.Oscillator();
+    soundWave.setType('sine');
+    soundWave.start();
+    soundWave.amp(0.5);
+    soundWave.frequency(220);
 }//close setup
 
 function draw() {
