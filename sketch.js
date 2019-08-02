@@ -33,7 +33,7 @@ var bSquareB = 0;
 var bSquareA = 0.5;
 var grayColor = 0;
 var incrementing = true;
-var soundWaves = [gridSizeX*gridSizeY];
+var soundWaves = [];
 var selectedSquares = [][];
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
