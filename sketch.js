@@ -115,7 +115,6 @@ function draw() {
     }//close outter for loop
     
     //PLAY SOUND
-    
     if ( selectedSquares[0][i] ){
         soundWaves[i].amp(0.5);
     }//close if
