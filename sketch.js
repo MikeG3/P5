@@ -74,7 +74,7 @@ function draw() {
           
        //INITIALIZE ALL SELECTED SQUARES TO FALSE
       // if (frameCounter == 0) {
-            selectedSquares[j][i] = false;  
+            selectedSquares[i][j] = false;  
        //}//close if
           
         //UPDATE COLORS
