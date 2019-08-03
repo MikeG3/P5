@@ -69,8 +69,8 @@ function setup() {
     }//close for i
     //CONSTRUCT ENVELOPES FOR TONE DURATION
     hole = new p5.Env();
-    hole.setADSR(1, 1, 1, 1)
-    hole.setRange(1, 1);
+    hole.setADSR(0.9, 0.9, 0.9, 0.9)
+    hole.setRange(1, 0);
 }//close setup
 
 //DRAW LOOPS FOREVER
