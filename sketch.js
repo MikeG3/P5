@@ -100,7 +100,7 @@ function draw() {
         }
 
         //COLOR SELECTED SQUARES 
-        if ( selectedSquares[j][i] ){
+        if ( selectedSquares[i][j] ){
             fill(25, 255, 75);
         }//close if selected position squares
         //COLOR SELECTED SQUARE
@@ -111,7 +111,7 @@ function draw() {
          rect(j*squareSize , i*squareSize , squareSize, squareSize); 
           
          //PLAY SOUND
-         if ( selectedSquares[j][i] ){
+         if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0.5);
          }//close if
           /*
