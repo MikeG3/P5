@@ -59,7 +59,7 @@ function setup() {
         soundWaves[i].start();
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
-        soundWaves[i].freq( (i*100) );
+        soundWaves[i].freq( (i*40+20) );
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
         for (j = 0 ; j < gridSizeY ; j++) {
