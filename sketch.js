@@ -35,7 +35,7 @@ var grayColor = 0;
 var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
-//var hole, half, quarter, eigth;
+var hole, half, quarter, eigth;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -68,11 +68,9 @@ function setup() {
          }//close for j
     }//close for i
     //CONSTRUCT ENVELOPES FOR TONE DURATION
-    /*
     hole = new p5.Env();
     hole.setADSR(1, 1, 1, 1)
     hole.setRange(1, 1);
-    */
 }//close setup
 
 //DRAW LOOPS FOREVER
