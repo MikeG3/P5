@@ -108,7 +108,7 @@ function draw() {
             fill(25, 25, 25);
         }//close if selected position square
         //DRAW EACH RECTANGLE IN THE LOOPS
-         rect(i*squareSize , j*squareSize , squareSize, squareSize); 
+         rect(j*squareSize , i*squareSize , squareSize, squareSize); 
           
          //PLAY SOUND
          if ( selectedSquares[i][j] ){
