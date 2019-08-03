@@ -104,7 +104,7 @@ function draw() {
             fill(25, 255, 75);
         }//close if selected position squares
         //COLOR SELECTED SQUARE
-        if ( j == xPos && i == yPos ){
+        if ( i == xPos && j == yPos ){
             fill(25, 25, 25);
         }//close if selected position square
         //DRAW EACH RECTANGLE IN THE LOOPS
