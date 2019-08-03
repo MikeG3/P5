@@ -114,9 +114,11 @@ function draw() {
          if ( selectedSquares[j][i] ){
             soundWaves[i].amp(0.5);
          }//close if
+          /*
          if ( !selectedSquares[j][i] ) {
               soundWaves[i].amp(0.0);
          }//close else not selected
+         /*
         }//close inner for loop
     }//close outter for loop
     
