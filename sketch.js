@@ -107,17 +107,16 @@ function draw() {
         if ( j == xPos && i == yPos ){
             fill(25, 25, 25);
         }//close if selected position square
-          
 
         //DRAW EACH RECTANGLE IN THE LOOPS
-         rect(j*squareSize , i*squareSize , squareSize, squareSize);  
+         rect(j*squareSize , i*squareSize , squareSize, squareSize); 
+          
+         //PLAY SOUND
+         if ( selectedSquares[0][i] ){
+            soundWaves[i].amp(0.5);
+         }//close if
         }//close inner for loop
     }//close outter for loop
-    
-    //PLAY SOUND
-    if ( selectedSquares[0][i] ){
-        soundWaves[i].amp(0.5);
-    }//close if
     
     
     //UPDATE FRAME COUNT
