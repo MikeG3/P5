@@ -115,7 +115,7 @@ function draw() {
             fill(25, 25, 25);
         }//close if selected position square
         if ( j == xPos && i == yPos && selectedSquares[i][j]){
-            fill(255, 0, 200);
+            fill(75, 20, 50);
         }//close if selected position square
         //DRAW EACH RECTANGLE IN THE LOOPS
          rect(j*squareSize , i*squareSize , squareSize, squareSize); 
