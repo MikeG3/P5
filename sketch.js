@@ -20,8 +20,8 @@ var i = 0;
 var j = 0;
 var xPos = 0;
 var yPos = 0;
-var gridSizeX = 28;
-var gridSizeY = 32;
+var gridSizeX = 32;
+var gridSizeY = 28;
 var squareSize = 15;
 var aSquareR = 0;
 var aSquareG = 0;
@@ -54,7 +54,7 @@ function setup() {
   createCanvas(pWidth, pHeight);
     frameRate(60);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
-    for (i = 0 ; i < gridSizeX ; i++) {
+    for (i = 0 ; i < gridSizeY ; i++) {
         soundWaves[i] = new p5.Oscillator();
         soundWaves[i].start();
         soundWaves[i].setType('sine');
