@@ -62,7 +62,7 @@ function setup() {
         soundWaves[i].freq( (i*40+20) );
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
-        for (j = 0 ; j < gridSizeY ; j++) {
+        for (j = 0 ; j < gridSizeX ; j++) {
              selectedSquares[i].push(false);
          }//close for j
     }//close for i
