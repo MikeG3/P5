@@ -47,7 +47,7 @@ function move(key) {
     if (key.keyCode == 38) {yPos -= 1; if (yPos < 0) { yPos += gridSizeY; } }
     if (key.keyCode == 40) {yPos += 1; if (yPos > gridSizeY) { yPos -= gridSizeY; } }
     //TOGGLE SELECTED SQUARE
-    if (key.keyCode == 13) { selectedSquares[xPos][yPos] = !selectedSquares[xPos][yPos];  }
+    if (key.keyCode == 13) { selectedSquares[yPos][xPos] = !selectedSquares[yPos][xPos];  }
 }//close move function
 
 function setup() {
