@@ -122,7 +122,7 @@ function draw() {
           
          //PLAY SOUND
          if ( selectedSquares[i][j] ){
-            soundWaves[i].amp();
+            soundWaves[i].amp(0.5);
          }//close if
           /*
          else {
