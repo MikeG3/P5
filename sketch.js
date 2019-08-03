@@ -111,9 +111,12 @@ function draw() {
          rect(j*squareSize , i*squareSize , squareSize, squareSize); 
           
          //PLAY SOUND
-         if ( selectedSquares[0][i] ){
+         if ( selectedSquares[j][i] ){
             soundWaves[i].amp(0.5);
          }//close if
+         else {
+              soundWaves[i].amp(0);
+         }//close else not selected
         }//close inner for loop
     }//close outter for loop
     
