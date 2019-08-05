@@ -57,7 +57,7 @@ function setup() {
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
     for (i = 0 ; i < gridSizeY ; i++) {
         soundWaves[i] = new p5.Oscillator();
-        soundWaves[i].start();
+        //soundWaves[i].start();
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*50+350) );
