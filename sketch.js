@@ -55,6 +55,8 @@ function move(key) {
 
 function setup() {
     createCanvas(pWidth, pHeight);
+        //BACKGROUND
+    background( 95, 95, 95);
     frameRate(60);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
     for (i = 0 ; i < gridSizeY ; i++) {
@@ -77,8 +79,7 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
-    //BACKGROUND
-    background( 95, 95, 95);
+
     
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
