@@ -18,6 +18,7 @@ var pHeight = window.innerHeight - 15;
 var frameCounter = 0;
 var i = 0;
 var j = 0;
+var k = 0;
 var xPos = 0;
 var yPos = 0;
 var gridSizeX = 32;
@@ -36,6 +37,7 @@ var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
 var hole, half, quarter, eigth;
+var tempo = 1000;           integer value used for counter to start/stop oscillator
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -52,16 +54,16 @@ function move(key) {
 }//close move function
 
 function setup() {
-  createCanvas(pWidth, pHeight);
+    createCanvas(pWidth, pHeight);
+    background( 95, 95, 95);
     frameRate(60);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
     for (i = 0 ; i < gridSizeY ; i++) {
         soundWaves[i] = new p5.Oscillator();
-        //soundWaves[i].start();
+        soundWaves[i].start();
         soundWaves[i].setType('sine');
         soundWaves[i].amp(0.0);
         soundWaves[i].freq( (i*50+350) );
-        soundWaves[i].start();
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
         for (j = 0 ; j < gridSizeX ; j++) {
@@ -76,8 +78,6 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
-    //BACKGROUND
-    background( 95, 95, 95);
     
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
@@ -123,12 +123,9 @@ function draw() {
          if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0.5);
          }//close if
-         
-         else {
-              soundWaves[i].amp(0.0);
-         }//close else not selected
-         
+          
         }//close inner for loop
+        
     }//close outter for loop
     
     
