@@ -138,11 +138,11 @@ function draw() {
              }//close if selected square
         }//close for j to play sound
         for ( j= 0 ; j < tempo ; j++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
-         for ( j = 0 ; j < gridSizeY ; j++ ) {
-             if ( selectedSquares[j][i] ){      //TURN OFF SOUND
-                soundWaves[j].amp(0.0);
-             }//close if selected square 
-         }//close for j to stop sound
+            for ( j = 0 ; j < gridSizeY ; j++ ) {
+                 if ( selectedSquares[j][i] ){      //TURN OFF SOUND
+                    soundWaves[j].amp(0.0);
+                 }//close if selected square 
+            }//close for j to stop sound
     }//close for i
     
     //UPDATE FRAME COUNT
