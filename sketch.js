@@ -120,12 +120,12 @@ function draw() {
         //DRAW EACH RECTANGLE IN THE LOOPS
          rect(j*squareSize , i*squareSize , squareSize, squareSize); 
          
-         /* 
+          
          //PLAY SOUND
          if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0.5);
          }//close if
-         */ 
+          
         }//close inner for loop
         
     }//close outter for loop
