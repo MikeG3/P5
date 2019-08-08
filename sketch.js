@@ -136,12 +136,13 @@ function draw() {
              if ( selectedSquares[j][i] ){      //PLAY SOUNDS
                 soundWaves[i].amp(0.5);
              }//close if selected square
-        }//close for j
+        }//close for j to play sound
         for ( j= 0 ; j < tempo ; j++ ){ k++; }  //DELAY SOUNDS FOR TEMPO TIME
          for ( j = 0 ; j < gridSizeY ; j++ ) {
              if ( selectedSquares[j][i] ){      //TURN OFF SOUND
                 soundWaves[i].amp(0.0);
-             }//close if selected square    
+             }//close if selected square 
+         }//close for j to stop sound
     }//close for i
     
     //UPDATE FRAME COUNT
