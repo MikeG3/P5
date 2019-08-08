@@ -132,10 +132,12 @@ function draw() {
     
     //PLAY SOUND
     for ( i = 0 ; i < gridSizeX ; i++ ) {
+        /*
         for ( j = 0 ; j < gridSizeY ; j++ ) {
              if ( selectedSquares[j][i] ){      //PLAY SOUNDS
                 soundWaves[j].amp(0.5);
              }//close if selected square
+             */
         }//close for j to play sound
         for ( j= 0 ; j < tempo ; j++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
             for ( j = 0 ; j < gridSizeY ; j++ ) {
