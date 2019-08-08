@@ -120,16 +120,30 @@ function draw() {
         }//close if selected position square
         //DRAW EACH RECTANGLE IN THE LOOPS
          rect(j*squareSize , i*squareSize , squareSize, squareSize); 
-          
+         
+         /* 
          //PLAY SOUND
          if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0.5);
          }//close if
-          
+         */ 
         }//close inner for loop
         
     }//close outter for loop
     
+    //PLAY SOUND
+    for ( i = 0 ; i < gridSizeX ; i++ ) {
+        for ( j = 0 ; j < gridSizeY ; j++ ) {
+             if ( selectedSquares[j][i] ){      //PLAY SOUNDS
+                soundWaves[i].amp(0.5);
+             }//close if selected square
+        }//close for j
+        for ( j= 0 ; j < tempo ; j++ ){ k++; }  //DELAY SOUNDS FOR TEMPO TIME
+         for ( j = 0 ; j < gridSizeY ; j++ ) {
+             if ( selectedSquares[j][i] ){      //TURN OFF SOUND
+                soundWaves[i].amp(0.0);
+             }//close if selected square    
+    }//close for i
     
     //UPDATE FRAME COUNT
     frameCounter++;
