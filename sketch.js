@@ -78,6 +78,8 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
+    //BACKGROUND
+    background( 95, 95, 95);
     
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
