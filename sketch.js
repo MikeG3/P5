@@ -55,7 +55,6 @@ function move(key) {
 
 function setup() {
     createCanvas(pWidth, pHeight);
-        //BACKGROUND
     background( 95, 95, 95);
     frameRate(60);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
