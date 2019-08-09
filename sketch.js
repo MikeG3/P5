@@ -62,7 +62,7 @@ function setup() {
         soundWaves[i] = new p5.Oscillator();
         soundWaves[i].start();
         soundWaves[i].setType('sine');
-        soundWaves[i].amp(0.5);
+        //soundWaves[i].amp(0.5);
         soundWaves[i].freq( (i*50+350) );
         soundWaves[i].amp(0.0);
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
@@ -79,8 +79,7 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
-
-    
+  
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
@@ -116,7 +115,7 @@ function draw() {
             fill(25, 25, 25);
         }//close if selected position square
         if ( j == xPos && i == yPos && selectedSquares[i][j]){
-            fill(75, 20, 50);
+            fill(122, 20, 50);
         }//close if selected position square
         //DRAW EACH RECTANGLE IN THE LOOPS
          rect(j*squareSize , i*squareSize , squareSize, squareSize); 
