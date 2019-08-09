@@ -80,11 +80,11 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
-    /*
+    
          for ( i = 0 ; i < gridSizeY ; i++ ) {
          soundWaves[i].amp(0.0);
                  }//close if selected square 
-    */
+    
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
