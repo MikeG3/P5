@@ -129,7 +129,7 @@ function draw() {
         }//close inner for loop
         
     }//close outter for loop
-    
+    /*
     //PLAY SOUND
     for ( i = 0 ; i < gridSizeX ; i++ ) {
         
@@ -146,7 +146,7 @@ function draw() {
                  }//close if selected square 
             }//close for j to stop sound
     }//close for i
-    
+    */
     //UPDATE FRAME COUNT
     frameCounter++;
 }//close draw
