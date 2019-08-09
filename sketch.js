@@ -126,7 +126,7 @@ function draw() {
             soundWaves[i].amp(0.5);
          }//close if
          //PAUSE
-          for ( j= 0 ; j < tempo ; j++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
+          for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
          //STOP SOUND
            if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0.5);
@@ -144,7 +144,7 @@ function draw() {
              }//close if selected square           
         }//close for j to play sound
           
-        for ( j= 0 ; j < tempo ; j++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
+        for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
             for ( j = 0 ; j < gridSizeY ; j++ ) {
                  if ( selectedSquares[j][i] ){      //TURN OFF SOUND
                     soundWaves[j].amp(0.0);
