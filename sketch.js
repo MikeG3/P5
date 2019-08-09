@@ -143,24 +143,7 @@ function draw() {
         }//close inner for loop
         
     }//close outter for loop
-    /*
-    //PLAY SOUND
-    for ( i = 0 ; i < gridSizeX ; i++ ) {
-        
-        for ( j = 0 ; j < gridSizeY ; j++ ) {
-             if ( selectedSquares[j][i] ){      //PLAY SOUNDS
-                soundWaves[j].amp(0.5);
-             }//close if selected square           
-        }//close for j to play sound
-          
-        for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
-            for ( j = 0 ; j < gridSizeY ; j++ ) {
-                 if ( selectedSquares[j][i] ){      //TURN OFF SOUND
-                    soundWaves[j].amp(0.0);
-                 }//close if selected square 
-            }//close for j to stop sound
-    }//close for i
-    */
+
  
     //UPDATE FRAME COUNT
     frameCounter++;
