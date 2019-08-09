@@ -125,7 +125,12 @@ function draw() {
          if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0.5);
          }//close if
-          
+         //PAUSE
+          for ( j= 0 ; j < tempo ; j++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
+         //STOP SOUND
+           if ( selectedSquares[i][j] ){
+            soundWaves[i].amp(0.5);
+           }//CLOSE IF
         }//close inner for loop
         
     }//close outter for loop
