@@ -80,11 +80,11 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
-    
+    /*
          for ( i = 0 ; i < gridSizeY ; i++ ) {
          soundWaves[i].amp(0.0);
                  }//close if selected square 
-    
+    */
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
@@ -130,7 +130,7 @@ function draw() {
          if ( selectedSquares[i][j] ){
              soundWaves[i].amp(0.5);
              soundWaves[i].start();
-             soundWaves[i].amp(noteDuration);
+             soundWaves[i].stop(noteDuration);
          }//close if
          //PAUSE
           for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
