@@ -154,6 +154,9 @@ function draw() {
             }//close for j to stop sound
     }//close for i
     */
+     for ( i = 0 ; i < gridSizeY ; i++ ) {
+         soundWaves[i].amp(0.0);
+                 }//close if selected square  
     //UPDATE FRAME COUNT
     frameCounter++;
 }//close draw
