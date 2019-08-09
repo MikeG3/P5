@@ -128,9 +128,11 @@ function draw() {
          //PAUSE
           for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
          //STOP SOUND
+          /*
            if ( selectedSquares[i][j] ){
             soundWaves[i].amp(0);
            }//CLOSE IF
+           */
         }//close inner for loop
         
     }//close outter for loop
