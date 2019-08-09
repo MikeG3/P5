@@ -127,7 +127,7 @@ function draw() {
           
          //PLAY SOUND
          if ( selectedSquares[i][j] ){
-            soundWaves[i].amp(0.5);
+            soundWaves[i].amp(hole);
          }//close if
          //PAUSE
           for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
