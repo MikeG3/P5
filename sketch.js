@@ -136,16 +136,18 @@ function draw() {
          
           
          //PLAY SOUND
-//          if (frameCount % 60 === 0 || frameCount === 1) {
-           if (frameCount % 60 === 0) {
-             if ( selectedSquares[i][j] ){
+         if (frameCount % 60 === 0) {
+            if ( selectedSquares[i][j] ){
+                 soundWaves[i].amp(0.5);
                  envelope.play( soundWaves[i], 0, 0.1);
-             }//close if
-             //PAUSE
-            // for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
-         }//close if fram 0 or 1
-        }//close inner for loop
-        
+            }//close if
+          }//close if fram 0 or 1
+         //STOP SOUND IF NOT SELECTED
+          if ( selectedSquares[i][j] ){
+            soundWaves[i].amp(0);
+          }//clof if not selected oscillator
+          
+        }//close inner for loop  
     }//close outter for loop
 
  
