@@ -57,7 +57,8 @@ function move(key) {
 function setup() {
     createCanvas(pWidth, pHeight);
     background( 95, 95, 95);
-    frameRate(60);
+    //frameRate(60);
+     frameRate(6000);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
     for (i = 0 ; i < gridSizeY ; i++) {
         soundWaves[i] = new p5.Oscillator();
@@ -143,7 +144,7 @@ function draw() {
             }//close if
           }//close if fram 0 or 1
          //STOP SOUND IF NOT SELECTED
-          if ( selectedSquares[i][j] ){
+          if ( !selectedSquares[i][j] ){
             soundWaves[i].amp(0);
           }//clof if not selected oscillator
           
