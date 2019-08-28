@@ -143,7 +143,7 @@ function draw() {
              envelope.play( soundWaves[i], 0, 0.1);
          }//close if
          //PAUSE
-          //for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
+         for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
          //STOP SOUND
           /*
            if ( selectedSquares[i][j] ){
