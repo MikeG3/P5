@@ -136,7 +136,8 @@ function draw() {
          
           
          //PLAY SOUND
-         if (frameCount % 60 === 0 || frameCount === 1) {
+//          if (frameCount % 60 === 0 || frameCount === 1) {
+           if (frameCount % 60 === 0) {
              if ( selectedSquares[i][j] ){
                  envelope.play( soundWaves[i], 0, 0.1);
              }//close if
