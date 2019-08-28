@@ -63,7 +63,7 @@ function setup() {
         soundWaves[i] = new p5.Oscillator();
         soundWaves[i].start();
         soundWaves[i].setType('sine');
-        //soundWaves[i].amp(0.5);
+        soundWaves[i].amp(0.5);
         soundWaves[i].freq( (i*50+350) );
         soundWaves[i].amp(0.0);
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
