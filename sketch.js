@@ -76,6 +76,15 @@ function setup() {
     hole = new p5.Env();
     hole.setADSR(0.5, 0.5, 0.5, 0.5)
     hole.setRange(1, 0);
+      //FROM DEMO
+      // Instantiate the envelope
+      envelope = new p5.Env();
+      // set attackTime, decayTime, sustainRatio, releaseTime
+      envelope.setADSR(0.001, 0.5, 0.1, 0.5);
+      // set attackLevel, releaseLevel
+      envelope.setRange(1, 0);
+      //
+      //envelope.play(tones, 0, 0.1);
 }//close setup
 
 //DRAW LOOPS FOREVER
@@ -130,7 +139,7 @@ function draw() {
          if ( selectedSquares[i][j] ){
              soundWaves[i].amp(0.5);
              soundWaves[i].start();
-             //soundWaves[i].stop(noteDuration);
+             envelope.play(tones, 0, 0.1);
          }//close if
          //PAUSE
           for ( k= 0 ; k < tempo ; k++ ){ k++; console.log(k);}  //DELAY SOUNDS FOR TEMPO TIME
