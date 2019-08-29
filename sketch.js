@@ -38,7 +38,6 @@ var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
 var tempo = 1;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
-var delayTime = 1;
 var delay = 0;
 
 var myNotes = [
