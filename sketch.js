@@ -138,7 +138,7 @@ function draw() {
          //STOP SOUND IF NOT SELECTED
 //           if ( !selectedSquares[i][j] ){
 //             soundWaves[i].amp(0);
-//           }//clof if not selected oscillator
+//           }//close if not selected oscillator
           
         }//close inner for loop  
     }//close outter for loop
