@@ -145,7 +145,7 @@ function draw() {
          
           
          //PLAY SOUND
-         if (frameCount % tempo === 0) {
+         if (frameCount % tempo === 0 || frameCount % tempo === 2 || frameCount % tempo === 4) {
             if ( selectedSquares[i][j] ){
                delay += noteDuration;
                delay %= audioRefreshRate;
