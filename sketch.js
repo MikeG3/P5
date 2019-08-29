@@ -39,6 +39,7 @@ var selectedSquares = [gridSizeY];
 var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 1;
 var delay = 0;
+var audioRefreshRate = 30;
 
 var myNotes = [
    150, 180, 187.5, 200, 225, 250, 300,
@@ -148,13 +149,13 @@ function draw() {
             if ( selectedSquares[i][j] ){
                 delay += j*noteDuration;
                 soundWaves[i].amp(0.4);
-                soundWaves[i].start(delay%30, i*50+350);
+                soundWaves[i].start(delay%audioRefreshRate, i*50+350);
                 soundWaves[i].amp(0.7);
                 //envelope.play( soundWaves[i][j], delay, 0.1);
                 //CALCULATE DELAY
                 delay += noteDuration;
                 //STOP SOUND AFTER DELAY
-                soundWaves[i].stop(delay%30);
+                soundWaves[i].stop(delay%audioRefreshRate);
             }//close if
           }//close if fram 0 or 1
           
