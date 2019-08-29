@@ -37,9 +37,8 @@ var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
 var hole, half, quarter, eigth;
-var tempo = 50;           //integer value used for counter to start/stop oscillator
+var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
-var delay = 1;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -91,11 +90,7 @@ function setup() {
 
 //DRAW LOOPS FOREVER
 function draw() {
-    /*
-         for ( i = 0 ; i < gridSizeY ; i++ ) {
-         soundWaves[i].amp(0.0);
-                 }//close if selected square 
-    */
+
     //CHECKERED BOARD
     for (i = 0 ; i < gridSizeY ; i++ ){
       for (j = 0 ; j < gridSizeX  ; j++) { 
@@ -138,10 +133,10 @@ function draw() {
          
           
          //PLAY SOUND
-         if (frameCount % 60 === 0) {
+         if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
                  soundWaves[i].amp(0.5);
-                 envelope.play( soundWaves[i], (j*delay), 0.1);
+                 envelope.play( soundWaves[i], delay*j, 0.1);
             }//close if
           }//close if fram 0 or 1
          //STOP SOUND IF NOT SELECTED
@@ -149,8 +144,8 @@ function draw() {
             soundWaves[i].amp(0);
           }//clof if not selected oscillator
           
-        }//close inner for j loop gridX
-    }//close outter for i loop gridY
+        }//close inner for loop  
+    }//close outter for loop
 
  
     //UPDATE FRAME COUNT
