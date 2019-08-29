@@ -71,7 +71,7 @@ function setup() {
         selectedSquares[i] = new Array(); 
         for (j = 0 ; j < gridSizeX ; j++) {
             selectedSquares[i].push(false);
-            soundWaves[i] = new p5.Oscillator();
+            soundWaves[i].push(new p5.Oscillator());
             soundWaves[i][j].start();
             soundWaves[i][j].setType('sine');
             soundWaves[i][j].amp(0.5);
