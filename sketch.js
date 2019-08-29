@@ -70,8 +70,8 @@ function setup() {
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
         for (j = 0 ; j < gridSizeX ; j++) {
-             selectedSquares[i].push(false);
-         }//close for j
+            selectedSquares[i].push(false);
+        }//close for j
     }//close for i
     //CONSTRUCT ENVELOPES FOR TONE DURATION
       //FROM DEMO
