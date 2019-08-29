@@ -71,6 +71,12 @@ function setup() {
         selectedSquares[i] = new Array(); 
         for (j = 0 ; j < gridSizeX ; j++) {
             selectedSquares[i].push(false);
+            soundWaves[i] = new p5.Oscillator();
+            soundWaves[i][j].start();
+            soundWaves[i][j].setType('sine');
+            soundWaves[i][j].amp(0.5);
+            soundWaves[i][j].freq( (i*50+350) );
+            soundWaves[i][j].amp(0.0);
         }//close for j
     }//close for i
     //CONSTRUCT ENVELOPES FOR TONE DURATION
