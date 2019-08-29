@@ -132,7 +132,7 @@ function draw() {
          if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
                  soundWaves[i].amp(0.5);
-                 envelope.play( soundWaves[i], delay*j, 0.1);
+                 envelope.play( soundWaves[i], delay*j*noteDuration, 0.1);
             }//close if
           }//close if fram 0 or 1
          //STOP SOUND IF NOT SELECTED
