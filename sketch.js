@@ -76,7 +76,7 @@ function setup() {
         soundWaves[i].amp(0.0);
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
-        soundWaves[i] = new Array();
+//         soundWaves[i] = new Array();
         for (j = 0 ; j < gridSizeX ; j++) {
             selectedSquares[i].push(false);
 //             let x = new p5.Oscillator()
@@ -158,8 +158,8 @@ function draw() {
             }//close if
           }//close if fram 0 or 1
           
-        }//close inner for loop  
-    }//close outter for loop
+        }//close inner for j gridX loop  
+    }//close outter for i gridY loop
  
     //UPDATE FRAME COUNT
     frameCounter++;
