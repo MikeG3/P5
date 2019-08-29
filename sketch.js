@@ -140,7 +140,7 @@ function draw() {
          if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
                  soundWaves[i][j].amp(0.5);
-                 envelope.play( soundWaves[i], delay*j*noteDuration, 0.1);
+                 envelope.play( soundWaves[i][j], delay*j*noteDuration, 0.1);
                 //CALCULATE DELAY
                 //STOP SOUND AFTER DELAY
             }//close if
