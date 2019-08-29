@@ -36,7 +36,7 @@ var grayColor = 0;
 var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
-var tempo = 180;           //for if (frameCount mod tempo === 0){}
+var tempo = 1;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
 var delayTime = 1;
 var delay = 0;
@@ -145,7 +145,7 @@ function draw() {
          
           
          //PLAY SOUND
-         if (frameCount % tempo === 0) {
+       //  if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
                 delay = delayTime*j*noteDuration;
                 soundWaves[i][j].amp(0.4);
@@ -157,7 +157,7 @@ function draw() {
                 //STOP SOUND AFTER DELAY
                 soundWaves[i][j].stop(delay);
             }//close if
-          }//close if fram 0 or 1
+         // }//close if fram 0 or 1
 //          STOP SOUND IF NOT SELECTED
 //           if ( !selectedSquares[i][j] ){
 //             soundWaves[i].amp(0);
