@@ -145,7 +145,7 @@ function draw() {
          
           
          //PLAY SOUND
-         if (frameCount % tempo === 0) {
+//          if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
                 delay += j*noteDuration;
                 soundWaves[i].amp(0.4);
@@ -157,7 +157,7 @@ function draw() {
                 //STOP SOUND AFTER DELAY
                 soundWaves[i].stop(delay%audioRefreshRate);
             }//close if
-          }//close if fram 0 or 1
+//           }//close if fram 0 or 1
           
         }//close inner for j gridX loop  
     }//close outter for i gridY loop
