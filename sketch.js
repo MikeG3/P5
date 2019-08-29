@@ -39,7 +39,7 @@ var selectedSquares = [gridSizeY];
 var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 1;
 var delay = 0;
-var audioRefreshRate = 30;
+var audioRefreshRate = 120;
 
 var myNotes = [
    150, 180, 187.5, 200, 225, 250, 300,
