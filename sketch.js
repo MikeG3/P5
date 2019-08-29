@@ -38,7 +38,7 @@ var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
 var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
-var delay;
+var delay = 1;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
