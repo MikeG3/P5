@@ -137,14 +137,15 @@ function draw() {
          
           
          //PLAY SOUND
-//          if (frameCount % tempo === 0) {
-//             if ( selectedSquares[i][j] ){
-//                  soundWaves[i].amp(0.5);
-//                  envelope.play( soundWaves[i], delay*j*noteDuration, 0.1);
-//                 //
-//             }//close if
-//           }//close if fram 0 or 1
-         //STOP SOUND IF NOT SELECTED
+         if (frameCount % tempo === 0) {
+            if ( selectedSquares[i][j] ){
+                 soundWaves[i][j].amp(0.5);
+                 envelope.play( soundWaves[i], delay*j*noteDuration, 0.1);
+                //CALCULATE DELAY
+                //STOP SOUND AFTER DELAY
+            }//close if
+          }//close if fram 0 or 1
+//          STOP SOUND IF NOT SELECTED
 //           if ( !selectedSquares[i][j] ){
 //             soundWaves[i].amp(0);
 //           }//close if not selected oscillator
