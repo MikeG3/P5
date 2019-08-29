@@ -36,11 +36,11 @@ var grayColor = 0;
 var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
-var tempo = 600;           //for if (frameCount mod tempo === 0){}
+var tempo = 3000;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 1;
 var delay = 0;
 var audioRefreshRate = 30;
-var frameRate = 600; //Rate at wich P5 calls draw function per amount of time
+var frameRate = 6000; //Rate at wich P5 calls draw function per amount of time
 
 var myNotes = [
    150, 180, 187.5, 200, 225, 250, 300,
