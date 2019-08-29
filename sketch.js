@@ -39,6 +39,7 @@ var selectedSquares = [gridSizeY];
 var hole, half, quarter, eigth;
 var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
+var delay;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
