@@ -149,8 +149,8 @@ function draw() {
             soundWaves[i].amp(0);
           }//clof if not selected oscillator
           
-        }//close inner for loop  
-    }//close outter for loop
+        }//close inner for j loop gridX
+    }//close outter for i loop gridY
 
  
     //UPDATE FRAME COUNT
