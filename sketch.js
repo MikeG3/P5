@@ -68,12 +68,12 @@ function setup() {
      frameRate(20);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
     for (i = 0 ; i < gridSizeY ; i++) {
-        soundWaves[i] = new p5.Oscillator();
-        soundWaves[i].start();
-        soundWaves[i].setType('sine');
-        soundWaves[i].amp(0.5);
-        soundWaves[i].freq( (i*50+350) );
-        soundWaves[i].amp(0.0);
+//         soundWaves[i] = new p5.Oscillator();
+//         soundWaves[i].start();
+//         soundWaves[i].setType('sine');
+//         soundWaves[i].amp(0.5);
+//         soundWaves[i].freq( (i*50+350) );
+//         soundWaves[i].amp(0.0);
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
         soundWaves[i] = new Array();
