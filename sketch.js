@@ -149,6 +149,8 @@ function draw() {
             if ( selectedSquares[i][j] ){
                delay += noteDuration;
                delay %= audioRefreshRate;
+               console.log("i = "+i);
+               console.log("j = "+j);
                console.log("Start Delay = "+delay);
                soundWaves[i].amp(0.4);
                soundWaves[i].start(delay, i*50+350);
