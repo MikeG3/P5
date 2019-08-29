@@ -36,10 +36,10 @@ var grayColor = 0;
 var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
-var tempo = 2;           //for if (frameCount mod tempo === 0){}
+var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 1;
 var delay = 0;
-var audioRefreshRate = 10;
+var audioRefreshRate = 30;
 var frameRate = 60; //Rate at wich P5 calls draw function per amount of time
 
 var myNotes = [
