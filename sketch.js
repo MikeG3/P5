@@ -149,11 +149,13 @@ function draw() {
             if ( selectedSquares[i][j] ){
                delay += noteDuration;
                delay %= audioRefreshRate;
+               console.log("Start Delay = "+delay);
                soundWaves[i].amp(0.4);
                soundWaves[i].start(delay, i*50+350);
                soundWaves[i].amp(0.7);
                //CALCULATE DELAY
                delay += noteDuration;
+               console.log("Stop Delay = "+delay);
                //STOP SOUND AFTER DELAY
                soundWaves[i].stop(delay);
             }//close if
@@ -164,5 +166,5 @@ function draw() {
  
     //UPDATE FRAME COUNT
     frameCounter++;
-   console.log("Delay = "+delay);
+
 }//close draw
