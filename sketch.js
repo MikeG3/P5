@@ -69,6 +69,7 @@ function setup() {
         soundWaves[i].amp(0.0);
         //INITIALIZE ALL SQUARES TO FLASE, NOT SELECTED
         selectedSquares[i] = new Array(); 
+        soundWaves[i] = new Array();
         for (j = 0 ; j < gridSizeX ; j++) {
             selectedSquares[i].push(false);
             let x = new p5.Oscillator()
