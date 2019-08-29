@@ -157,14 +157,9 @@ function draw() {
                 soundWaves[i].stop(delay);
             }//close if
           }//close if fram 0 or 1
-//          STOP SOUND IF NOT SELECTED
-//           if ( !selectedSquares[i][j] ){
-//             soundWaves[i].amp(0);
-//           }//close if not selected oscillator
           
         }//close inner for loop  
     }//close outter for loop
-
  
     //UPDATE FRAME COUNT
     frameCounter++;
