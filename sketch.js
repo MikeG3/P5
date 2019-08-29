@@ -66,7 +66,7 @@ function setup() {
     createCanvas(pWidth, pHeight);
     background( 95, 95, 95);
     //frameRate(60);
-     frameRate(4);
+     frameRate(20);
     //CONSTRUCT AND INTIALIZE SOUND WAVES FOR ALL ROWS
     for (i = 0 ; i < gridSizeY ; i++) {
         soundWaves[i] = new p5.Oscillator();
