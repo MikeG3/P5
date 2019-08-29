@@ -41,6 +41,13 @@ var noteDuration = 0.5;
 var delayTime = 1;
 var delay = 0;
 
+var myNotes = [
+   150, 180, 187.5, 200, 225, 250, 300,
+   300, 360, 375, 400, 450, 500, 600,
+   450, 720, 750, 800, 900, 1000, 1200,
+   600, 1440, 1500, 1600, 1800, 2000, 2400,
+   1200, 1880, 3000, 3200, 3600, 4000, 4800 ];
+
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
 
@@ -142,7 +149,7 @@ function draw() {
             if ( selectedSquares[i][j] ){
                 delay = delayTime*j*noteDuration;
                 soundWaves[i][j].amp(0.4);
-                soundWaves[i][j].start(delay)
+                soundWaves[i][j].start(delay, myNotes[i]);
                 soundWaves[i][j].amp(0.7);
                 //envelope.play( soundWaves[i][j], delay, 0.1);
                 //CALCULATE DELAY
