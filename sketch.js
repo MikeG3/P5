@@ -39,6 +39,7 @@ var selectedSquares = [gridSizeY];
 var hole, half, quarter, eigth;
 var tempo = 50;           //integer value used for counter to start/stop oscillator
 var noteDuration = 0.5;
+var delay = 1;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -140,7 +141,7 @@ function draw() {
          if (frameCount % 60 === 0) {
             if ( selectedSquares[i][j] ){
                  soundWaves[i].amp(0.5);
-                 envelope.play( soundWaves[i], 0, 0.1);
+                 envelope.play( soundWaves[i], (j*delay), 0.1);
             }//close if
           }//close if fram 0 or 1
          //STOP SOUND IF NOT SELECTED
