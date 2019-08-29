@@ -153,7 +153,7 @@ function draw() {
                soundWaves[i].start(delay, i*50+350);
                soundWaves[i].amp(0.7);
                //CALCULATE DELAY
-               delay += noteDuration;
+//                delay += noteDuration;
                //STOP SOUND AFTER DELAY
                soundWaves[i].stop(delay);
             }//close if
