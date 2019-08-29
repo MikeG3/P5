@@ -154,7 +154,7 @@ function draw() {
                 //CALCULATE DELAY
                 delay += j*noteDuration + noteDuration;
                 //STOP SOUND AFTER DELAY
-                soundWaves[i][j].stop(delay);
+                soundWaves[i].stop(delay);
             }//close if
           }//close if fram 0 or 1
 //          STOP SOUND IF NOT SELECTED
