@@ -152,7 +152,7 @@ function draw() {
                 soundWaves[i].amp(0.7);
                 //envelope.play( soundWaves[i][j], delay, 0.1);
                 //CALCULATE DELAY
-                delay += j*noteDuration + noteDuration;
+                delay += noteDuration;
                 //STOP SOUND AFTER DELAY
                 soundWaves[i].stop(delay);
             }//close if
