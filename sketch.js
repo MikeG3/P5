@@ -164,4 +164,5 @@ function draw() {
  
     //UPDATE FRAME COUNT
     frameCounter++;
+   console.log("Delay = "+delay);
 }//close draw
