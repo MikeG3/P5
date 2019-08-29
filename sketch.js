@@ -40,7 +40,7 @@ var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 1;
 var delay = 0;
 var audioRefreshRate = 120;
-va frameRate = 60; //Rate at wich P5 calls draw function per amount of time
+var frameRate = 60; //Rate at wich P5 calls draw function per amount of time
 
 var myNotes = [
    150, 180, 187.5, 200, 225, 250, 300,
