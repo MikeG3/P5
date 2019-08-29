@@ -148,7 +148,7 @@ function draw() {
             if ( selectedSquares[i][j] ){
                 delay += j*noteDuration;
                 soundWaves[i][j].amp(0.4);
-                soundWaves[i][j].start(delay, myNotes[i+10]);
+                soundWaves[i][j].start(delay, myNotes[i+5]);
                 soundWaves[i][j].amp(0.7);
                 //envelope.play( soundWaves[i][j], delay, 0.1);
                 //CALCULATE DELAY
