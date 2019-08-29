@@ -38,7 +38,8 @@ var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
 var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
-var delay = 1;
+var delayTime = 1;
+var delay = 0;
 
 //RESPOND TO ARROW KEY INPUT (ASCII 37-40)
 window.addEventListener('keydown', move );
@@ -139,9 +140,11 @@ function draw() {
          //PLAY SOUND
          if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
+                delay = 0;
                  soundWaves[i][j].amp(0.5);
                  envelope.play( soundWaves[i][j], delay*j*noteDuration, 0.1);
                 //CALCULATE DELAY
+                delay = delay*j*noteDuration + noteDuration;
                 //STOP SOUND AFTER DELAY
             }//close if
           }//close if fram 0 or 1
