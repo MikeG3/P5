@@ -75,9 +75,6 @@ function setup() {
          }//close for j
     }//close for i
     //CONSTRUCT ENVELOPES FOR TONE DURATION
-    hole = new p5.Env();
-    hole.setADSR(0.5, 0.5, 0.5, 0.5)
-    hole.setRange(1, 0);
       //FROM DEMO
       // Instantiate the envelope
       envelope = new p5.Env();
@@ -85,8 +82,7 @@ function setup() {
       envelope.setADSR(0.001, 0.25, 0.1, 0.25);
       // set attackLevel, releaseLevel
       envelope.setRange(1, 0);
-      //
-      //envelope.play(tones, 0, 0.1);
+     
 }//close setup
 
 //DRAW LOOPS FOREVER
@@ -137,7 +133,7 @@ function draw() {
          if (frameCount % tempo === 0) {
             if ( selectedSquares[i][j] ){
                  soundWaves[i].amp(0.5);
-                 envelope.play( soundWaves[i], delay*j, 0.1);
+                 envelope.play( soundWaves[i], delay*j, delay*j);
             }//close if
           }//close if fram 0 or 1
          //STOP SOUND IF NOT SELECTED
