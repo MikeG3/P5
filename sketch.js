@@ -36,7 +36,6 @@ var grayColor = 0;
 var incrementing = true;
 var soundWaves = [gridSizeY];
 var selectedSquares = [gridSizeY];
-var hole, half, quarter, eigth;
 var tempo = 60;           //for if (frameCount mod tempo === 0){}
 var noteDuration = 0.5;
 var delay;
